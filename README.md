@@ -25,12 +25,19 @@ This project implements user login and JWT-based authentication and authorizatio
 
 ## Project Structure
 src/
+
 ├── api/ # Controller layer (User APIs)
+
 ├── domain/ # Entity classes (User, Role)
+
 ├── filter/ # Custom Authentication & Authorization filters
+
 ├── repo/ # Data access layer (Spring Data JPA)
+
 ├── security/ # Security config & JWT utilities
+
 ├── service/ # Business logic layer
+
 └── Application.java # Spring Boot application starter
 
 ## The application will start on:
