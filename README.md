@@ -39,19 +39,26 @@ http://localhost:9090
 ## Example API usage
 ### Login to get tokens
 POST /api/login
+
 Content-Type: application/x-www-form-urlencoded
+
 Body: username=arnold&password=1234
 
 ### Refresh access token
 GET /api/token/refresh
+
 Headers: Authorization: Bearer <refresh_token>
 
 ### Get user info (requires authorization)
 GET /api/user
+
 Headers: Authorization: Bearer <access_token>
 
 ## Security Details
 Authentication logic overridden via UsernamePasswordAuthenticationFilter
+
 Authorization handled with OncePerRequestFilter validating JWT tokens
+
 Tokens signed using HMAC256 algorithm
+
 CSRF disabled and stateless session management enabled
