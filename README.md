@@ -37,16 +37,16 @@ src/
 http://localhost:9090
 
 ## Example API usage
-# Login to get tokens
+### Login to get tokens
 POST /api/login
 Content-Type: application/x-www-form-urlencoded
 Body: username=arnold&password=1234
 
-# Refresh access token
+### Refresh access token
 GET /api/token/refresh
 Headers: Authorization: Bearer <refresh_token>
 
-# Get user info (requires authorization)
+### Get user info (requires authorization)
 GET /api/user
 Headers: Authorization: Bearer <access_token>
 
